@@ -47,7 +47,7 @@
             <div class="col-lg-3 col-md-4 align-self-center">
                <div class="logo">
                   <a href="index.html" class="latterColor">
-                     <img src="assets/img/Icon.png" alt="">
+                     <!-- <img src="assets/img/Icon.png" alt=""> -->
                      miniCal
                   </a>
                </div>
@@ -191,7 +191,7 @@
                         <label for="tab2">Hostel</label>
                      </li>
                      <li class="tab3">
-                        <label for="tab3">Vacation Rent</label>
+                        <label for="tab3">Vacation Rental</label>
                      </li>
                      <li class="tab4">
                         <label for="tab4">Apartment</label>
@@ -225,34 +225,37 @@
       "advance_deposit_report" : "1.0.0"
    },
    "settings": {
-   "automatic_email_confirmation" : false,
-   "automatic_email_cancellation" : false,
-   "send_booking_notes" : false,
-   "additional_email" : { 
-      "send_copy_to_additional_emails" : false ,
-      "additional_company_emails"  :"Mail ID"
-      },
-   "send_invoice_email_automatically" : false,
-   "hide_room_name" : false,
-   "display_tooltip" : true,
-   "make_guest_field_mandatory" : false,
-   "include_cancelled_noshow_bookings" : true,
-   "enable_hourly_booking" : false,
-   "allow_free_bookings" : false,
-   "allow_booking_cancelled_with_balance" : false,
-   "restrict_booking_dates_modification" : false,
-   "restrict_checkout_with_balance" : false,
-   "auto_no_show" : true,
-   "force_room_selection" : true,
-   "hide_forecast_charges" : false,
-   "is_total_balance_include_forecast" : true,
-   "show_guest_group_invoice" : false,
-   "enable_new_calendar" : false,
-   "unit_name":{
-      "default_room_singular": "room", 
-      "default_room_plural" : "rooms" 
-      },
-   "default_room_type" : "room type"
+      "automatic_email_confirmation" : false,
+      "automatic_email_cancellation" : false,
+      "send_booking_notes" : false,
+      "additional_email" : { 
+         "send_copy_to_additional_emails" : false ,
+         "additional_company_emails"  :"Mail ID"
+         },
+      "send_invoice_email_automatically" : false,
+      "hide_room_name" : false,
+      "display_tooltip" : true,
+      "make_guest_field_mandatory" : false,
+      "include_cancelled_noshow_bookings" : true,
+      "hourly_booking_enabled" : false,
+      "allow_free_bookings" : false,
+      "allow_booking_cancelled_with_balance" : false,
+      "restrict_booking_dates_modification" : false,
+      "restrict_checkout_with_balance" : false,
+      "auto_no_show" : true,
+      "force_room_selection" : true,
+      "hide_forecast_charges" : false,
+      "is_total_balance_include_forecast" : true,
+      "show_guest_group_invoice" : false,
+      "enable_new_calendar" : false,
+      "unit_name":{
+         "singular": "room", 
+         "plural" : "rooms" 
+         },
+      "unit_type_name" :  {
+         "singular":"room type",
+         "plural": "room types"
+         }
    }
 }
     </code>
@@ -293,7 +296,7 @@
       "display_tooltip" : true,
       "make_guest_field_mandatory" : false,
       "include_cancelled_noshow_bookings" : true,
-      "enable_hourly_booking" : false,
+      "hourly_booking_enabled" : false,
       "allow_free_bookings" : false,
       "allow_booking_cancelled_with_balance" : false,
       "restrict_booking_dates_modification" : false,
@@ -305,10 +308,13 @@
       "show_guest_group_invoice" : false,
       "enable_new_calendar" : false,
       "unit_name":{ 
-         "default_room_singular": "bed", 
-         "default_room_plural" : "beds" 
+         "singular": "bed", 
+         "plural" : "beds" 
          },
-      "default_room_type" : "bed type"
+      "unit_type_name" : {
+         "singular":"room type",
+         "plural": "room types"
+         }
    }
 }
     </code>
@@ -329,7 +335,7 @@
                            <center>
 <pre class="line-numbers">
 <code class="language-json">{
-   "name": "Vacation Rent",
+   "name": "Vacation Rental",
    "version": "1.0.0",
    "description": "",
    "dependencies": {
@@ -349,7 +355,7 @@
       "display_tooltip" : true,
       "make_guest_field_mandatory" : false,
       "include_cancelled_noshow_bookings" : true,
-      "enable_hourly_booking" : false,
+      "hourly_booking_enabled" : false,
       "allow_free_bookings" : false,
       "allow_booking_cancelled_with_balance" : false,
       "restrict_booking_dates_modification" : false,
@@ -361,10 +367,13 @@
       "show_guest_group_invoice" : false,
       "enable_new_calendar" : false,
       "unit_name":{ 
-         "default_room_singular": "room",
-         "default_room_plural" : "rooms" 
+         "singular": "room",
+         "plural" : "rooms" 
         },
-      "default_room_type" : "room type"
+      "unit_type_name" :  {
+         "singular":"room type",
+         "plural": "room types"
+         }
      }
 }
     </code>
@@ -405,7 +414,7 @@
       "display_tooltip" : true,
       "make_guest_field_mandatory" : false,
       "include_cancelled_noshow_bookings" : true,
-      "enable_hourly_booking" : false,
+      "hourly_booking_enabled" : false,
       "allow_free_bookings" : false,
       "allow_booking_cancelled_with_balance" : false,
       "restrict_booking_dates_modification" : false,
@@ -417,10 +426,13 @@
       "show_guest_group_invoice" : false,
       "enable_new_calendar" : false,
       "unit_name":{ 
-         "default_room_singular": "room", 
-         "default_room_plural" : "rooms" 
+         "singular": "unit", 
+         "plural" : "units" 
          },
-      "default_room_type" : "room type"
+      "unit_type_name" :  {
+         "singular":"unit type",
+         "plural": "unit types"
+         }
    }
 }
     </code>
@@ -462,7 +474,7 @@
       "display_tooltip" : true,
       "make_guest_field_mandatory" : false,
       "include_cancelled_noshow_bookings" : true,
-      "enable_hourly_booking" : false,
+      "hourly_booking_enabled" : true,
       "allow_free_bookings" : false,
       "allow_booking_cancelled_with_balance" : false,
       "restrict_booking_dates_modification" : false,
@@ -474,10 +486,13 @@
       "show_guest_group_invoice" : false,
       "enable_new_calendar" : false,
       "unit_name":{ 
-         "default_room_singular": "car", 
-         "default_room_plural" : "cars" 
+         "singular": "vehicle", 
+         "plural" : "vehicles" 
          },
-      "default_room_type" : "car type"
+      "unit_type_name" :  {
+         "singular":"vehicle type",
+         "plural": "vehicle types"
+         }
       }
 }
     </code>
@@ -518,7 +533,7 @@
       "display_tooltip" : true,
       "make_guest_field_mandatory" : false,
       "include_cancelled_noshow_bookings" : true,
-      "enable_hourly_booking" : false,
+      "hourly_booking_enabled" : true,
       "allow_free_bookings" : false,
       "allow_booking_cancelled_with_balance" : false,
       "restrict_booking_dates_modification" : false,
@@ -530,10 +545,13 @@
       "show_guest_group_invoice" : false,
       "enable_new_calendar" : false,
       "unit_name":{ 
-         "default_room_singular": "Office", 
-         "default_room_plural" : "Offices"
+         "singular": "room", 
+         "plural" : "rooms"
          },
-      "default_room_type" : "Office type"
+      "unit_type_name" :{
+         "singular": "room type", 
+         "plural" : "room types"
+         }
       }
 }
     </code>

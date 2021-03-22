@@ -1935,7 +1935,8 @@ input[type="email"] {
      font-weight:600;   
     }
     .menu-wep a:hover{
-      border-bottom: 2px solid;   
+      /* border-bottom: 2px solid;    */
+      color: #e5e3ff;
     }
 
 
@@ -3689,7 +3690,7 @@ nav ul li label{
 .product-tabs ul li label {
   
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 32px;
   letter-spacing: 1.33333px;
   float: left;
